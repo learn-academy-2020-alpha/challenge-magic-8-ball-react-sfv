@@ -6,5 +6,24 @@ body{
 }
 h1{
   text-decoration: underline;
+  color: grey;
   font-size: 40px;
+  word-spacing: 10px;
+  font-family: butcherman,fantasy;
+}
+h1:hover {
+    transform: scale(1.5);
+}
+.image{
+    height: 100px;
+    transition: transform .2s;
+    opaity: 1;
+    animation: fade 2s infinite;
+}
+@keyframes fade{
+    0%, 100% {opacity: 0}
+    50% {opacity: 1 }
+}
+.image:hover {
+    transform: scale(1.5);
 }
